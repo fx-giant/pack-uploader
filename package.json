@@ -1,0 +1,21 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pack": "node ./__uploader__/packer.js",
+    "upload": "node ./__uploader__/upload.js",
+    "clear": "node ./__uploader__/clear.js",
+    "deploy": "npm run pack && npm run upload && npm run clear"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "2.1.0",
+    "dotenv": "^4.0.0",
+    "node-datetime": "^2.0.3",
+    "request": "^2.83.0",
+    "rimraf": "^2.6.2"
+  }
+}
